@@ -1,0 +1,596 @@
+
+
+Language :-
+-----------
+for communication with humans
+hindi,telugu,tamil,kannada,english
+
+
+Programming Language:-
+---------------------------
+
+		machines
+		
+		POP								OOP
+B,C,BCPL,photon,cobol....			C++,Java,Python,.net,.....
+
+
+
+				1)	security				abstraction, encapsulation		oops
+                2) performance				inheritance,polymorphisam    
+
+
+
+		OOPS/OOPL   
+
+java oops/oopl		sun micro system
+
+		june 24th 1995				oracle 
+
+				1)Platform Independent
+				2)Garbage Collection
+
+					James Gosling	jdk1.0-->JRE-->JVM
+					jdk8
+					 16
+1)Platform Independent:
+========================
+			53---core java--->small letters 
+			
+						.java   	//user language  ,source code  
+						
+					translator/translation	,			//JVM machine language  0's 1's binary,byte
+	
+			
+					compiler/compaliation
+			
+			
+						.class     byte code 	javac filename.java 
+			
+			
+												java classname	
+			
+			.java,.class
+			
+			
+			java PI
+						WORA
+			
+			Oracle			microsoft	
+			
+			java 			.net
+			
+			
+			
+	2)Garbage Collection		
+			
+					
+		garbage collector--->jvm
+
+
+
+
+Variables:
+==========
+			name of storage location
+
+				name ="sandeep"
+
+
+				marks=78
+
+syntax:
+======
+
+		datatype varname=value;
+
+		 age=28;//static typing
+
+
+53
+dataypes:lower case
+---------
+primitive DT		8bits												String,Array...
+		byte		1bytes			-128 to 127
+		short		2bytes			-32768 to 32767
+		int 		4bytes			-2147483768 to 2147483767
+		long     	8bytes			-(2 power 63) to (2 power 63)-1
+
+		float 		4bytes			
+		double		8bytes
+
+		boolean 		true/false
+		
+		char 			'M'  UNICODE 
+
+127
+		byte age=23;
+
+				
+
+			datatype varname =value;
+			
+			byte age=28;
+			
+	types:
+	------
+				2 types
+				
+				local variable
+				
+				global variable
+
+
+method-->local variable
+
+out side the method and with in the class -->global variable
+
+
+
+
+	instance and static variables 
+
+
+four differences:
+------------------
+syntax:					javac filename.java compilation   .class   java Test --->JVM
+-------
+		static char gender='M';//global and static
+		 float marks=123.67f;//global and instance
+
+memory:
+-------
+		static properties will get memory space ONLY ONCE at the time class loading into jvm
+		instance properties will get memory space FOR EVERY OBJECT CREATION
+	
+		class , object
+		
+			object creation:
+			-----------------
+			classname objname=new classname();
+Access:
+-------
+		static properties can be accessed with classname
+		instance properties can be accessed with objname
+	
+Use:
+---
+			for common data like clgname ,schoolname,orgname....static
+
+			for unique data like contact,pan,aadhar....instance	
+
+
+ 
+Methods:
+========
+			public static void main(String args[])//method signature
+			{
+			
+			//method body
+			
+			
+			}
+			//reusability
+			
+				static	void addition(int a,int b)
+							{
+							
+							}
+			
+			
+
+syntax:				
+------------
+
+
+
+
+
+memory:
+-------
+		static properties will get memory space ONLY ONCE at the time class loading into jvm
+		instance properties will get memory space FOR EVERY OBJECT CREATION
+	
+		class , object
+		
+			object creation:
+			-----------------
+			classname objname=new classname();
+Access:
+-------
+		static properties can be accessed with classname
+		instance properties can be accessed with objname
+	
+Use:
+---
+			for common data like clgname ,schoolname,orgname....static
+
+			for unique data like contact,pan,aadhar....instance	
+
+
+
+Flow Control:
+============
+
+
+
+
+JVM Architecture:
+------------------
+where 
+
+local variables will get memory space at the time of method execution..stack area
+
+static variables will get memory space  at the time class loading into jvm  ---method area
+ 
+instance variables will get memory space   at the time of object creation  ---heap
+
+		
+	
+	JDK-->JRE-->JVM
+	
+																		JVM																						
+	
+								javac filename.java					java classname
+	.java source code ---->compilation compiler--->.class  byte code--------->   
+
+
+			JVM   
+			
+					CLSS  				 ---->laoding the class file
+
+					memory areas		 ---->5 
+					
+					execution engine     ---->executes code 
+					
+			
+			jar-->java archive file--->.class 
+				
+				
+				zip
+
+
+eclipse:
+--------
+
+						JAVA
+				JSE      JEE       JME		
+
+4 types applications
+
+
+1)Standalone/Dekstop  applications ...JSE  corejava,awt,swings,applets
+
+2)web applications 					JEE		servlets,jsp,jsf,ejb,springmvc....
+
+3)Distributed Applications			JEE webservices	,rest
+  
+4)mobile applications               JME   Android
+
+
+
+
+
+Dynamic data
+
+
+package -->folder
+				
+						predefined				 userdefined 
+				java.lang,								package
+
+
+
+
+
+package com.corejava;
+
+
+public class Test {
+	public static void main(String args[]) {// jvm java Test "1112" 1113
+		
+		int empId = Integer.parseInt(args[0]);// wrapper classes
+
+		String empName = args[1];
+
+		float empSalary = Float.parseFloat(args[2]);
+
+		String empAdd = args[3];
+
+		System.out.println(empId + "  " + empName + "  " + empSalary + " " + empAdd);
+
+	}
+
+}// take employeeid,empname,empsal empadd
+
+
+oops:
+====
+OOPS/OOPL
+
+				1)	security				abstraction, encapsulation		oops
+                2) performance				inheritance,polymorphisam    
+
+
+
+inheritance:
+------------	CODE Reusability--->performance 
+
+extends,implements
+
+class Caluculator {
+
+//varia
+bles 
+//1000 methods
+
+
+
+
+
+
+}
+class Test extends Caluculator{
+
+
+//500 methods
+
+
+}
+
+
+
+
+
+//java.lang is default package for every java file
+
+//java.lang.Object class is by default parent for every java class  
+
+
+
+
+class A{
+
+//11
+
+
+
+
+}
+
+
+
+
+abstract/concrete
+
+
+
+method with implementation
+
+
+method signature+method body
+
+		public void add(int a,int b){
+		
+		
+		
+		}//concrete method non-abstract method
+
+
+
+		public abstract void mul(int a,int b);
+
+
+abstract class ,interface 
+			
+
+class:-combination only concrete methods
+
+abstract class:-combination of both concrete and abstract methods
+
+interface :-combination of only abstract methods
+
+
+Multiple Inheritance:
+---------------------
+OOPL
+	
+		MI not supported by java @class Level 
+		MI  supported by java @inteface Level 
+
+
+				interface A				interface 	B
+					m1();				m1();
+				
+				
+							C implements A,B
+							
+							
+							m1()
+							{
+							
+							}
+							
+		Inheritance,abstraction, polymorphisam,encapsulation					
+							
+							
+						abstract 		method with out body/implementation
+						
+						non-abstract   method with out body/implementation
+				
+
+		abstract class-->abstract+concrete   0-100
+		
+		interface--->abstract methods		100%
+		
+
+
+polymorphisam:-
+==============
+
+				2 ways 
+
+					1)method overloading
+						method name is same signature is different 
+												no of params
+												order of params
+												type of params
+						
+						
+						class Calc
+						{
+						public void add(float a,float b)
+						{
+						System.out.println("Addition of two float numbers : "+(a+b));
+						}
+						public void add(int a,int b)
+						{
+						System.out.println("Addition of two int numbers : "+(a+b));
+						}
+						public void add(int a,int b,int c)
+						{
+						System.out.println("Addition of three numbers : "+(a+b+c));
+						}
+						public void add(int a,float b)
+						{
+						System.out.println("Addition of int,float numbers : "+(a+b));
+						}
+						public void add(float a,int b)
+						{
+						System.out.println("Addition of float,int numbers : "+(a+b));
+						}
+						}
+						
+						
+					2)method overriding
+					  -----------------
+
+					
+						class Parents
+						{
+						
+							void properties()
+							{
+							
+							sop("100 crores");
+							}
+						
+							void marriage()
+							{
+							
+							sop("xyz")
+							}
+						}
+
+						class Child extends Parents
+						{
+						@Override
+							void marriage()
+							{
+							sop("hari")
+							}
+						
+						
+						}
+					
+					
+					
+					this,super,final,constructor,public,private,protected,default,encapsulation
+					
+					
+					
+					
+		constructor:it is used to intialize the object 
+		-----------		
+					
+					it is a special method ,which can be called at the time object creation
+					
+					m1()
+					
+					A()
+					{
+					
+					
+					}
+					A  a=new A();
+					a.m1()
+					classname objname=new constructor();
+					
+					
+					
+					int a=123;
+					
+					int a;
+					a=124;
+					
+				default constructor
+				parameterized constructor
+
+
+				m1()
+				{
+				
+				}
+				m2(int a,String b)
+				{
+				
+				
+				}
+
+Access Modifiers:
+----------------
+
+public,private,protected,default
+
+
+
+this,super
+
+final
+
+		before variable ,method,class
+
+
+	we cant change the value of final variable througout the program
+	we cant override final methods	
+	we cant extends the final classes 
+	
+	
+Encapsulation:
+==============
+wrapping up of data and corresponding methods together -->class
+
+	class Employee
+	{
+	private int empId;
+	private String empName;
+	private String empAddress;
+	private float empSalary;
+	
+	//public setters and getters
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
