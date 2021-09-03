@@ -573,18 +573,18 @@ wrapping up of data and corresponding methods together -->class
 
 
 
+final
+
+				mutable
+String,StringBuffer,StringBuilder-->java.lang
 
 
+			String-->immutable
 
 
+			String name="fiserv";
 
-
-
-
-
-
-
-
+			String name1=new String("fiserv");
 
 
 	
